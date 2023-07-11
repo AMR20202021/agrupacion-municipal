@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agrupación socialista de dodro</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estilo.css">
 </head>
 
-<body>
+<body >
   <!-- favicons-->
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 
@@ -21,15 +22,16 @@
 
   </svg>
   <!-- fin favicons-->
-  <div class="container">
+  <div class="container-fulid">
 
     <!-- Nav-->
-    <nav class="navbar navbar-expand-lg bg-light ">
+    <nav class="navbar navbar-expand-lg especial ">
       <div class="container-fluid ">
         <a class="navbar-brand" href="#">
-          <img src="images/PSOE_1.png" alt="PSOE" width="" height="">
-          PSDG de Dodro
+          <img src="images/PSOE_1.png" alt="PSOE" width="" height="" class="img-fluid">
+          PSdeG-Dodro
         </a>
+       
         <div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,52 +46,36 @@
                 <a class="nav-link" href="https://www.facebook.com/psoe.dodro/?locale=es_ES">Redes Sociais</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacta con nós</a>
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"   >Contacta con nós</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
+
+  
+</div>
     <!-- fin  Nav-->
 
     <!--presentación -->
-    <div class="fs-1  text-center m-5">
+    <div class="fs-1  text-center m-5" id="presentacion">
       Agrupación socialista de Dodro
 
     </div>
-
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
+<div class="container" >
+ 
           <img src="images/agrupacion.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="images/garupacion2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="images/agrupacion3.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+        
     </div>
     <!-- fin presentación -->
 
     <!--Noticias -->
     <div class="fs-1  text-center m-5">
-      Notícias
+      Noticias
     </div>
 
-    <div class="container ">
+    <div class="container "   id="noticias">
       <div class="row justify-content-center">
         <div class="card m-3" style="width: 18rem;">
           <img src="images/recollida_carteis.jpg" class="card-img-top mt-2" alt="...">
@@ -123,6 +109,19 @@
       </div>
     </div>
 
+    <div class="container" >
+      <div class="row justify-content-center">
+        <div class="col">
+      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpsoe.dodro%2Fposts%2Fpfbid02Eoak1pvUTGkojduPzVcyGcZ4Utp7rh2zaJ23Kf3qwNJhuEgTv8jYpsXpNWr9q1Q8l&show_text=true&width=500" width="560" height="431" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+    <div class="col">
+      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpsoe.dodro%2Fposts%2Fpfbid02sDNvk3sYBBCoKFSZtSV22RtCYppvuLqSBzyD8ed8dbjBrSHssd9qfUoQVsHEnZCcl&show_text=true&width=500" width="560" height="431" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+      <div class="col">
+      <iframe src="https://www.facebook.com/plugins/video.php?height=316&href=https%3A%2F%2Fwww.facebook.com%2Fpsoe.dodro%2Fvideos%2F643276247854958%2F&show_text=true&width=560&t=0" width="560" height="431" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    </div>
+    </div>
+    </div>
     <!-- fin Noticias -->
     <!-- Articulos -->
     <div class="container">
@@ -181,8 +180,9 @@
         </div>
       </div>
     </div>
+   
     <!-- footer-->
-    <div class="container mt-5">
+    <div class="container-fluid mt-5 especial">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class=" col col-md-4 d-flex align-items-center">
           <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
@@ -203,6 +203,26 @@
     </div>
 
     <!-- fin footer-->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contacta con nós</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       Se queres porte en conatcto con nos manda un coreo a esta dirección:
+       </div>
+       <div class="modal-body">
+        psoedodro@hotmail.com
+      </div>
+      
+    
+  </div>
+</div>
+
 
   </div>
   <script src="./main.js" type="module"></script>
